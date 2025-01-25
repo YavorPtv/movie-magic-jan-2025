@@ -7,6 +7,5 @@ export default {
 
         return result;        
     }
-
 }
 
