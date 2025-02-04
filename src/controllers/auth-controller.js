@@ -31,6 +31,12 @@ authController.post('/login', async (req, res) => {
         console.log(err.message);
         res.redirect('/404');
     }
-})
+});
+
+authController.get('/logout', (req, res) => {
+    res.clearCookie('auth');
+
+    res.redirect('/');
+});
 
 export default authController;
